@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Tree</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+
+    <!-- Font Awesome llave de mi kit-->
+    <script src="https://kit.fontawesome.com/97fafb9f5f.js" crossorigin="anonymous"></script>
+
+
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css"> <!--Es un enlace a la hoja de estilos "style.css" que creamos, que está en la carpeta "css" del proyecto-->
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header"> <!-- Se define la clase "header" en la misma header, para manipular la etiqueta-->
+        <div class="header-content animated heartBeat delay-1s">
+            <img src="img/logo_de_fazt.png" alt="Logotipo" class="logo"> <!-- Crear una logo de 200 x 200 pixeles, en formato PNG -->
+            <h3 class="title">Tienda de Ropa</h3> <!-- La clase "title" es creada por nosotros. Va a servir para estilizar aquellos textos donde vaya definida -->
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptas deleniti itaque ducimus, sed provident impedit.</p>
+        </div>
+    </header>
+
+    <!--SERVICES-->
+    <section class="services text-center"> <!-- La clase "text-center" es creada por nosotros. Va a servir para centrar los textos donde vaya indicada esta clase-->
+        <h3 class="title">TITULO 1</h3>
+
+        <div class="container grid-3"> <!-- La clase "container" es creada por nosotros. Va a contener a su vez a la clase tambien creada por nosotros "grid-3" -->
+            
+            <!-- ### Cada "div" a continuación es una columna de la "grid-3" ### -->
+            
+            <!-- Columna 1 -->
+            <div> <!-- Primera columna del "grid-3": Constará de: Un ícono, un titulo, un parrafo -->
+                <i class="fas fa-shopping-cart fa-5x"></i> <!-- La clase "fa-[numero]x" varia el tamaño del ícono -->
+                <h3>Haz tu pedido</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Obcaecati illum exercitationem perferendis, unde laudantium impedit.</p>
+            </div> 
+
+            <!-- Columna 2 -->
+            <div> <!-- Segunda columna del "grid-3": Constará de: Un ícono, un titulo, un parrafo -->
+                <i class="fas fa-at fa-5x"></i> <!-- La clase "fa-[numero]x" varia el tamaño del ícono -->
+                <h3>Contactanos</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Obcaecati illum exercitationem perferendis, unde laudantium impedit.</p>
+            </div>
+
+            <!-- Columna 3 -->
+            <div> <!-- Tercera columna del "grid-3": Constará de: Un ícono, un titulo, un parrafo -->
+                <i class="fab fa-facebook-square fa-5x"></i> <!-- La clase "fa-[numero]x" varia el tamaño del ícono -->
+                <h3>Facebook</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Obcaecati illum exercitationem perferendis, unde laudantium impedit.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CARRUCEL DE IMAGENES Y FORMAS DE OPAGO-->
+    <section class="carrucel bg-light"> <!-- Las clases "carrucel" y "bg-light" estilizarán con css esta sección -->
+        <div class="container text-center"> <!-- La clase "text-center" es la que también se usó en la sección de "services" para centrar el texto-->
+            
+            <div class="grid-2"> <!-- Este "div" es para agrupar los siguientes "div" (columnas) del grid de 2-->
+
+            <!-- Los siguientes "div" son las columnas del grid, que en este caso, tendrá 2 columnas-->
+
+
+                <!-- Columna 1 -->
+                <div class="center">
+                    <h3 class="title"> Galería de Imágenes </h3>
+                    <i class="fas fa-camera fa-5x"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Voluptas, tempore.</p>
+                </div>
+
+                <!-- Columna 2-->
+                <div>
+                    <h3 class="title"> Formas de pago </h3>
+                    <i class="fas fa-hand-holding-usd fa-5x"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        In perspiciatis eius, reprehenderit totam laborum placeat saepe vero illo atque labore?
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PREGUNTAS FRECUENTES Y ENVIOS-->
+    <section class="carrucel bg-dark "> <!-- Las clases "carrucel" y "bg-light" estilizarán con css esta sección -->
+        <div class="container text-center"> <!-- La clase "text-center" es la que también se usó en la sección de "services" para centrar el texto-->
+            
+            <div class="grid-2"> <!-- Este "div" es para agrupar los siguientes "div" (columnas) del grid de 2-->
+
+            <!-- Los siguientes "div" son las columnas del grid, que en este caso, tendrá 2 columnas-->
+
+
+                <!-- Columna 1 -->
+                <div class="center">
+                    <h3 class="title"> Preguntas Frecuentes </h3>
+                    <i class="fas fa-question-circle fa-5x"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Voluptas, tempore.</p>
+                </div>
+
+                <!-- Columna 2-->
+                <div>
+                    <h3 class="title"> Envíos </h3>
+                    <i class="fas fa-shipping-fast fa-5x"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        In perspiciatis eius, reprehenderit totam laborum placeat saepe vero illo atque labore?
+                    </p>
+                </div>
+
+            
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!--FOOTER -->
+    <footer class="footer text-center bg-light"> <!--La clase "footer" dará estilo al footer. Las cases "text-center" y "bg-light" ya han sido usadas anteriormente -->
+        <p> Marca Personal &copy; 2019 Todos los derechos reservados. </p>
+    </footer>
+
+
+</body>
+</html>

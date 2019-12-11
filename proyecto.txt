@@ -1,0 +1,26 @@
+ || Todo lo usado durante la construcción del proyecto ||
+
+- Levantar el servidor de prueba: crtl + shift + p => Abrirá las sugerencias de sudio code. Teclear [ Live Server: Open with Live Server ] y seleccionarlo. Esto pondrá en marcha el servidor de prueba a la escucha. 
+NOTA: Para que jale con Firefox, primero hay que cerrar el navegador Firefox, ya que al levantar el servidor, éste se abre automáticamente.
+
+
+- Font Awesome. Para poder usar font awesome, ya no se pudo hacer justo como indica Fazt en el tutorial. Ahora pide suscribirse y confirmar e-mail. Solamente de esta manera te brinda el CDN en tu cuenta de fontawesome. 
+
+
+*** Hasta el minuto 35:35 
+https://www.youtube.com/watch?v=hDggsjXjQro
+
+
+
+*** Se usa MEDIA QUERY para hacer RESPONSIVE la página.
+
+
+*** Se usa ANIMATE.CSS para animar el titulo y el logo. Página: https://daneden.github.io/animate.css/
+
+
+*** Se inicializa un repositorio de git dentro de la carpeta del proyecto:
+
+Desde consola:
+
+git init  /* Para inicializar el repo */
+git status /* Para verificar que se ha inicializado */

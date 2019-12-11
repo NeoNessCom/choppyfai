@@ -1,0 +1,227 @@
+body /* Esta es la etiqueta del "body" del html */
+{
+    background: rgba(0,0,0,.9); /* Sintaxis: rgba(#red,#green,#blue,#opacidad) */
+    margin: 0;
+    color: #FFF;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+
+
+/*###################################################################################################################################################################################################################*/
+
+
+
+/* H E A D E R */ 
+
+
+
+.header::after /* Se declaró a "header" como una clase, para poder manipularlo de la siguiente manera. U se tiene que declarar el "::after" para que agarre el blur antes de posiciónar el puntero */
+{
+    content: '';
+    background-image: url(../img/header_bg.jpg);  /* Hacer una imagen de 6123 x 4086 pixeles */
+    background-size: cover; /* Hace que la imagen abarque la totalidad de la pantalla/contenedor */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    filter: blur(0px);  /* Difuminacion de la imagen de fondo */
+    -webkit-filter: blur(0px); /* Difuminación de la imagen de fondo. Especificación para que agarre en todos los browsers */
+    transition: all 1000ms;
+}
+
+
+
+.header:hover::after  /*  Esta clase que recibe los metodos "hover" y "after", indica que el blur que se le aplicó al contenido, va a quedar anulado */
+{
+    filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Especificación para que agarre en todos los browsers */
+}
+
+
+
+
+
+
+/*####################################################################################################################################################*/
+
+
+
+/* L O G O */
+
+
+
+.header-content
+{
+    position: absolute; /* Funde el contenido del header para que el contenido del ".header-content" no se sobre ponga al background */
+    z-index: 1; /* Para que el contenido de la clase ".header-content" pase hacia adelante */
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    text-align: center; /* Alinea al centro unicamente el texto del contenido */
+    width: 300px;
+    height: 350px;
+    filter: blur(1px);  /* Antes de poner el puntero encima, está difuminado el logo */
+    -webkit-filter: blur(1px); /* Para que agarre el blur en todos los browsers */
+    transition: all 1000ms; /* LO que tarda el efecto blur en completarse */
+}
+
+
+.header:hover .header-content
+{
+    filter: blur(0px); /* Cuando el puntero se posiciona sobre el ".header", reacciona el ".header-content" (o sea, el logo), y se difumina. */ 
+    -webkit-filter: blur(0px); /* Para que agarre en todos los browsers */
+
+}
+
+
+
+/*
+.header-content .logo
+{
+    height: 100px;
+    width: 100px;
+}
+*/
+
+
+.title
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
+
+.text
+{
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.container
+{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem; /* Arriba y abajo = 4rem || A los lados = 1rem */
+}
+
+
+
+.text-center
+{
+    text-align: center;
+    margin: auto;
+}
+
+
+.services
+{
+    padding: 1rem 1rem;
+}
+
+
+
+.grid-3
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Se puede especificar la repeticion de las 3 fracciones con una funcion: [ repeat(3, fr) ] - Tambien se pueden definir columnas por pixeles, como por ejemplo 30px 30px 30px */
+    grid-gap: 20px;
+}
+
+
+
+.grid-2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) /* 1fr 1fr */;
+    grid-gap: 20px;
+}
+
+
+
+.bg-light  /* Background control de sección */
+{
+    background: #FFF;
+    color: #333;
+}
+
+
+.bg-dark  /* Background control de sección */
+{
+    background: #2f3542;
+    color: #FFF;
+}
+
+
+.services
+{
+    padding: 2rem 0;
+}
+
+
+footer /* Se invocan como etiquetas y no como clases, ya que así se establecieron en HTML */
+{
+    padding: 2.2rem;
+}
+
+footer p /* Se invocan como etiquetas y no como clases, ya que así se establecieron en HTML */
+{
+    margin: 0;
+}
+
+
+
+/*##########################################################################################################################################*/
+
+
+/* M E D I A  Q U E R Y */
+
+@media(max-width: 560px) /* Tamaño de pantalla que queremos soportar - 560px es de lo más popular, aunque no estandar */
+{
+    .header::after
+    {
+        height: 50vh;
+    }
+
+    .header-content
+    {
+        top: 5%;
+        margin-top: 5px;
+    }
+
+    .header-content .logo
+    {
+        height: 140px;
+        width: 140px;
+    }
+
+    .header-content .text
+    {
+        display: none;
+    }
+
+
+    .grid-3, .grid-2
+    {
+        grid-template-columns: 1fr;  /* Se altera el numero de columnas, para que en este modo responsivo, solamente se ordene en 1 sola columna: una debajo de la otra */
+    }
+}
+
+
+@media(max-height: 500px) /* Otro media query */
+{
+    .header-content .text
+    {
+        display: none;
+    }
+
+    .header-content
+    {
+        top:0; 
+    }
+} 

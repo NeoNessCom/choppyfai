@@ -231,3 +231,9 @@ footer p /* Se invocan como etiquetas y no como clases, ya que así se estableci
 {
     color: #FFF;
 }
+
+
+.color_hipertexto_2
+{
+    color: #333;
+}

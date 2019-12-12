@@ -23,4 +23,22 @@ https://www.youtube.com/watch?v=hDggsjXjQro
 Desde consola:
 
 git init  /* Para inicializar el repo */
-git status /* Para verificar que se ha inicializado */
+git status /* Para verificar que se ha inicializado (apareceran en rojo porque todavia no se agregan oficialmente)*/
+git add . /* Para agregar todos los archivos de la carpeta a la repo */ 
+git status /* Ahora aparecerán en verde, ya que ya están agregados */
+git commit -m "primer-commit" /* Pone en punto todo el repo local, para que esté listo para subirse a github */
+git remote add origin https://github.com/NeoNessCom/choppyfai.git /*Para agregar la dirección destino hacia la que se hará la subida */
+git push -u origin master  /* Carga los archivos a la repo de git. Si aún no tenemos sesion abierta en la consola, tecleamos esto. Nos pedirá credenciales. */
+
+
+
+
+*** Una vez hecho lo anterior, creamos una nueva branch en la página de git, de nombre "gh-pages".
+En un branch tendrémos el código de la página, y en otro el código para poder verlo en un servidor. 
+NOTA: Lo anterior ya no es necesario hacerlo en github, pero por si las dudas, se deja la nota.
+
+
+
+*** Página para comprar el dominio: https://www.namecheap.com/
+Nombre elegido para la repo en github: choppyfai
+Seguir las instrucciones del video de Fazt para configurar el dominio en github

@@ -225,3 +225,9 @@ footer p /* Se invocan como etiquetas y no como clases, ya que así se estableci
         top:0; 
     }
 } 
+
+
+.color_hipertexto
+{
+    color: #FFF;
+}

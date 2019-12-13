@@ -116,10 +116,3 @@ https://codepen.io/sosuke/pen/Pjoqqp
 
 
 
-facebook-square-brands.svg
-
-
-<img class="altercacion_de_iconos" src="img/facebook-square-brands.svg" alt="arroba">
-
-
-

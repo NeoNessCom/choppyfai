@@ -7,8 +7,6 @@ NOTA: Para que jale con Firefox, primero hay que cerrar el navegador Firefox, ya
 - Font Awesome. Para poder usar font awesome, ya no se pudo hacer justo como indica Fazt en el tutorial. Ahora pide suscribirse y confirmar e-mail. Solamente de esta manera te brinda el CDN en tu cuenta de fontawesome. 
 
 
-*** Hasta el minuto 35:35 
-https://www.youtube.com/watch?v=hDggsjXjQro
 
 
 
@@ -42,3 +40,86 @@ NOTA: Lo anterior ya no es necesario hacerlo en github, pero por si las dudas, s
 *** Página para comprar el dominio: https://www.namecheap.com/
 Nombre elegido para la repo en github: choppyfai
 Seguir las instrucciones del video de Fazt para configurar el dominio en github
+
+
+
+
+
+########################################################################################################################################################
+
+
+
+
+
+|| CAMBIANDO IMAGENES png A svg ||
+
+Nota: Asi estaba Antes el parrafo del carrito, que se cambió. En lugar de ir el tagg de <img>, iba este <i>...</i>, que hace referencia al CDN de Font Awesome.
+Sus partes son: 'fas' es una etiqueta de Font Awesome. 'color_hipertexto' es una etiqueta mia. 'fa_shopping-cart' el nombre de la imagen que
+hace referencia al CDN. 'fa-5x' idica el tamaño de la imagen:
+
+<i class="fas color_hipertexto fa-shopping-cart fa-5x"></i>
+
+
+
+
+Paso 1 - Taggear la imagen en donde queremos que vaya, de la misma manera en la que se taggean las imagenes normales:
+
+<img src="">
+
+
+
+
+
+Paso 2 - Declarar una clase para manipular algunas de sus propiedades desde CSS:
+
+<img class="" src="">
+
+Ejemplo de cómo quedaría el parrafo: [ img class="altercacion_de_iconos" src="img/shopping-cart-solid.svg"> ]
+
+
+
+
+
+Paso 3 -  Definir en CSS la clase que le dimos al tagg. 
+
+.altercacion_de_iconos
+{
+}
+
+
+
+
+
+Paso 4 - Detallar dentro del bloque de la clase sus atributos. Uno de los cuales, definirá su color; esté es "filter":
+
+.altercacion_de_iconos /* Una simple y facil forma de cambiar el color de las imagenes .svg */
+{
+width: 90px;
+height: 80px;
+filter: invert(100%) sepia(96%) saturate(19%) hue-rotate(236deg) brightness(104%) contrast(100%);
+}
+
+
+***NOTA: Hay que definir el color de filter en formato CSS. Para ello, podemos usar esta página para pasar colores de hexadecimal a CSS:
+
+https://codepen.io/sosuke/pen/Pjoqqp
+
+*Hasta abajo aparece el resultado.
+
+
+########################################################################################################################################################
+
+
+
+
+
+
+
+
+facebook-square-brands.svg
+
+
+<img class="altercacion_de_iconos" src="img/facebook-square-brands.svg" alt="arroba">
+
+
+

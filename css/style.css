@@ -176,7 +176,10 @@ footer p /* Se invocan como etiquetas y no como clases, ya que así se estableci
 
 
 
+
 /*##########################################################################################################################################*/
+
+
 
 
 /* M E D I A  Q U E R Y */
@@ -227,6 +230,13 @@ footer p /* Se invocan como etiquetas y no como clases, ya que así se estableci
 } 
 
 
+
+/*#################################################################################################*/
+
+
+
+/* Clases para cambiar el color a blanco de los textos convertidos en enlaces */
+
 .color_hipertexto
 {
     color: #FFF;
@@ -237,6 +247,10 @@ footer p /* Se invocan como etiquetas y no como clases, ya que así se estableci
 {
     color: #333;
 }
+
+
+
+/*#################################################################################################*/
 
 
 
@@ -262,6 +276,9 @@ filter: invert(17%) sepia(4%) saturate(16%) hue-rotate(346deg) brightness(100%) 
 /*########################################################################################################*/
 
 
+
+
+/* Uso de la animación proporcionada por ANIMATE.CSS pero de manera embebida */
 
 @-webkit-keyframes heartBeat {
     0% {

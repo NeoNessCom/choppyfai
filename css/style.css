@@ -80,13 +80,15 @@ body /* Esta es la etiqueta del "body" del html */
 
 
 
-/*
+
+/*Para modificar el tamaño del logo, ya que originalmente es de 800x800px*/
+
 .header-content .logo
 {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
 }
-*/
+
 
 
 .title
@@ -339,8 +341,8 @@ filter: invert(17%) sepia(4%) saturate(16%) hue-rotate(346deg) brightness(100%) 
     animation-name: heartBeat;
     -webkit-animation-duration: 1.3s;
     animation-duration: 1.3s;
-    /*-webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;*/
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
     -webkit-animation-delay: 5s;
     animation-delay: 3s
   }
